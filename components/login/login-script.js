@@ -1,8 +1,6 @@
 let newAccountBtn = document.getElementById('new-account-btn');
 let loginForm = document.getElementById('login-form-template');
-// let createAccountFormContainer = document.getElementById('create-account-container');
-// let formContainer = document.getElementById('login-form-container');
-
+let currentUser;
 
 
 newAccountBtn.addEventListener('click', (e) => {
@@ -40,8 +38,10 @@ $('#login-form-template').validate({
 
 function loginUser(username, password) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    console.log(users);
     const user = users.find(user => user.email === username && user.password === password);
+
+    localStorage.setItem('currentUser', JSON.stringify(user));
+
     return user;
 }
 
@@ -59,3 +59,5 @@ loginForm.addEventListener('submit', (event) => {
         alert('Invalid username or password.');
     }
 });
+
+// module.exports =  currentUser;

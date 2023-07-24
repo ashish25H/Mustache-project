@@ -1,0 +1,44 @@
+.follow-card {
+  position: absolute;
+  top: 1000px;
+  width: 20vw;
+}
+.follow-card .header {
+  padding: 20px 0px 20px 20px;
+}
+.follow-card ul {
+  padding: 0px;
+}
+.follow-card ul li {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+}
+.follow-card ul li div {
+  margin-right: 18px;
+}
+.follow-card ul li div .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.follow-card ul li div .occupation {
+  color: rgb(165, 164, 164);
+}
+.follow-card ul li div p {
+  margin-bottom: 3px;
+}
+.follow-card ul li img {
+  width: 70px;
+  margin-right: 10px;
+}
+.follow-card ul li .follow-btn {
+  background-color: #259cf1;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: small;
+  padding: 3px 8px;
+}
+
+/*# sourceMappingURL=follow-card.css.map */

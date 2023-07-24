@@ -1,0 +1,36 @@
+.card-container {
+    width: 20vw;
+    position: absolute;
+    top: 390px;
+
+    .card-text {
+        text-align: center;
+
+        .followers-info {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                margin: 20px 10px 0 10px;
+
+                h3 {
+                    color: #259cf1;
+                    ;
+                }
+            }
+        }
+
+        .card-btn {
+            background-color: #ffffff;
+            border: 1px solid #898787;
+            color: #747272;
+            margin-top: 25px;
+            padding: 5px 10px;
+
+            .profile-icon{
+                margin-right: 5px;
+            }
+        }
+
+    }
+}

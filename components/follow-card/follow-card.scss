@@ -1,0 +1,47 @@
+.follow-card {
+    position: absolute;
+    top: 1000px;
+    width: 20vw;
+
+    .header {
+        padding: 20px 0px 20px 20px;
+    }
+
+    ul {
+        padding: 0px;
+        li {
+            align-items: center;
+            display: flex;
+            list-style: none;
+            padding: 10px 10px 10px 10px;
+
+            div{
+                margin-right: 18px;
+                .name{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .occupation{
+                    color: rgb(165, 164, 164);
+                }
+                p{
+                    margin-bottom: 3px;
+                }
+            }
+
+            img{
+                width: 70px;
+                margin-right: 10px;
+            }
+
+            .follow-btn{
+                background-color: #259cf1;
+                border: none;
+                border-radius: 20px;
+                color: #ffffff;
+                font-size: small;
+                padding: 3px 8px;
+            }
+        }
+    }
+}
