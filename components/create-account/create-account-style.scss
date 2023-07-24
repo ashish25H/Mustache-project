@@ -1,0 +1,18 @@
+.create-account-container {
+    align-items: center;
+    background-color: aquamarine;
+    height: 115vh;
+    display: flex;
+    scroll-behavior: auto;
+    justify-content: center;
+
+    #create-account-form{
+        background-color: bisque;
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+    .error{
+        color: red;
+        margin-top: 5px;
+    }
+}
