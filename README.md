@@ -1,3 +1,5 @@
-Guest User /n
-Email - guest@gmail.com /n
+Guest User 
+
+Email - guest@gmail.com 
+
 password - guest25#G
