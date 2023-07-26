@@ -56,7 +56,7 @@ loginForm.addEventListener('submit', (event) => {
     if(isLogedIn){
         window.location.href = 'about.html';
     }else{
-        alert('Invalid username or password.');
+        alert('Invalid username or password/User not exist create account');
     }
 });
 

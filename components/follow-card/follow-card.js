@@ -1,8 +1,21 @@
 let friends = JSON.parse(localStorage.getItem('friends'));
-let flag = false;
+let friendImg = []
 
 let friend = {
     arr: friends,
+}
+
+async function renderFriendList() {
+    let response = await fetch('components/friend-list/friend-list.html');
+    let template = await response.text();
+   
+    let images = JSON.parse(localStorage.getItem('friendsImg'));
+
+    let img = {
+        arr: images,
+    }
+
+    document.getElementById('friend-list').innerHTML = Mustache.render(template, img);
 }
 
 async function renderFollowCard() {
@@ -15,9 +28,17 @@ async function renderFollowCard() {
 
     followBtn.forEach((item) => {
         item.addEventListener('click', (event) => {
-            window.frindImg = {url : event.target.id};
+            // localStorage.removeItem('friendsImg');
+           friendImg.push({url : event.target.id});
+           localStorage.setItem('friendsImg', JSON.stringify(friendImg));
+           event.target.disabled = true;
+           event.target.style.backgroundColor = '#8e8e8e';
+
+           renderFriendList();
         });
-    });
+    });  
 }
+
+
 
 renderFollowCard();

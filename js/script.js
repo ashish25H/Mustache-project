@@ -8,7 +8,7 @@
 // function renderLoginCom() {
 //     document.getElementById('login-form').innerHTML = Mustache.render(temp);
 // };
-
+localStorage.removeItem('friendsImg');
 
 async function renderLoginPage(){
     let response = await fetch('components/login/login.mustache');
