@@ -9,37 +9,72 @@
 
     ul {
         padding: 0px;
+
         li {
+            .img-name{
+                display: flex;
+            }
             align-items: center;
             display: flex;
+            justify-content: space-between;
             list-style: none;
-            padding: 10px 10px 10px 10px;
+            padding: 18px 10px 0px 20px;
 
-            div{
+            .img-and-point {
+                position: relative;
+                margin-right: 0px;
+
+                img {
+                    width: 60px;
+                    margin-right: 10px;
+                }
+
+                .point {
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 45px;
+                    bottom: 3px;
+                    width: 6px;
+                    height: 6px;
+                    background-color: red;
+                }
+
+                .active {
+                    background-color: green;
+                }
+
+                .not-active {
+                    background-color: red;
+                }
+            }
+
+            .name-and-occupation {
                 margin-right: 18px;
-                .name{
+                // width: 35%;
+
+                .name {
                     font-size: 18px;
                     font-weight: 500;
                 }
-                .occupation{
+
+                .occupation {
                     color: rgb(165, 164, 164);
                 }
-                p{
-                    margin-bottom: 3px;
+
+                p {
+                    margin-bottom: 0px;
                 }
             }
 
-            img{
-                width: 70px;
-                margin-right: 10px;
-            }
+           
 
-            .follow-btn{
+            .follow-btn {
                 background-color: #259cf1;
                 border: none;
                 border-radius: 20px;
                 color: #ffffff;
                 font-size: small;
+                margin-right: 10px;
                 padding: 3px 8px;
             }
         }

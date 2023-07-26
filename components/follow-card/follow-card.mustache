@@ -2,17 +2,21 @@
     <div class="card-header header">
         WHO TO FOLLOW
     </div>
-    <ul >
+    <ul>
+        {{#arr}}
         <li>
-
-            <img src="../../assets/avatar-1.png" alt="avatar-1">
-            <div>
-                <p class="name">Josephin Doe</p>
-                <p class="occupation">Software Engineer</p>
-            </div>
-            <button id="follow-btn" class="follow-btn">Follow</button>
-
+        <div class="img-name">
+             <div class='img-and-point'>
+                <img src="{{image}}" alt="avatar-1">
+                <div class='point {{#isActive}}active{{/isActive}}'></div>
+             </div>
+             <div class="name-and-occupation">
+                <p class="name">{{name}}</p>
+                <p class="occupation">{{occupation}}</p>
+             </div>
+         </div>
+                <button id="{{image}}" class="follow-btn">Follow</button>
         </li>
-
+        {{/arr}}
     </ul>
 </div>
