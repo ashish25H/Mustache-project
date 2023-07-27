@@ -1,4 +1,4 @@
-const friends = [
+const users = [
     {
         name : 'Alice',
         occupation : 'Software Developer',
@@ -31,4 +31,54 @@ const friends = [
     }
 ]
 
+const friends = [
+    {
+        name : 'Tony',
+        occupation : 'Software Developer',
+        image : 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRocI51Zm4Trk_dBVn317rFhgrQ-i9U4Di9zwaQrQnTkoS_KOqz',
+        isActive : true,
+    },
+    {
+        name : 'Thor',
+        occupation : 'Graphic Designer',
+        image : 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRocI51Zm4Trk_dBVn317rFhgrQ-i9U4Di9zwaQrQnTkoS_KOqz',
+        isActive : false,
+    },
+    {
+        name : 'Chloe',
+        occupation : 'Veterinarian',
+        image : 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRocI51Zm4Trk_dBVn317rFhgrQ-i9U4Di9zwaQrQnTkoS_KOqz',
+        isActive : true,
+    },
+    {
+        name : 'Daniel',
+        occupation : 'Musician',
+        image : 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRocI51Zm4Trk_dBVn317rFhgrQ-i9U4Di9zwaQrQnTkoS_KOqz',
+        isActive : false,
+    },
+    {
+        name : 'Mr.Bean',
+        occupation : 'Chef',
+        image : 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRocI51Zm4Trk_dBVn317rFhgrQ-i9U4Di9zwaQrQnTkoS_KOqz',
+        isActive : true,
+    }
+]
+
+const currentUser = {
+    name : 'Guest',
+    email : 'guest@gmail.com',
+    company : 'newput',
+    age : 20,
+    occupation : 'Software Engineer',
+    DOB : '20/08/1998',
+    gender : 'Male',
+    password : 'guest25#G',
+    maritalStatus : 'Unmarried',
+    location : 'India',
+    skills : 'JavaScript',
+    jobs : 1,
+}
+
+localStorage.setItem('users', JSON.stringify(users));
+localStorage.setItem('currentUser', JSON.stringify(currentUser));
 localStorage.setItem('friends', JSON.stringify(friends));

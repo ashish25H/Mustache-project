@@ -1,10 +1,13 @@
 <div class="card friend-list-card">
     <div class="friend-list-header">
-        FRIENDS
+        <div>FRIENDS</div>
+        <button class="see-more-btn">See more</button>
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-    </ul>
+    <hr>
+  
+    <div class="friends-images">
+        {{#arr}}
+        <img src="{{url}}" alt="friend-image">
+        {{/arr}}
+    </div>
 </div>

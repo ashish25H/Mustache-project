@@ -1,12 +1,12 @@
-let friends = JSON.parse(localStorage.getItem('friends'));
+let users = JSON.parse(localStorage.getItem('users'));
 let friendImg = []
 
-let friend = {
-    arr: friends,
+let userData = {
+    arr: users,
 }
 
 async function renderFriendList() {
-    let response = await fetch('components/friend-list/friend-list.html');
+    let response = await fetch('components/friend-list/friend-list.mustache');
     let template = await response.text();
    
     let images = JSON.parse(localStorage.getItem('friendsImg'));
@@ -22,7 +22,7 @@ async function renderFollowCard() {
     let response = await fetch('components/follow-card/follow-card.mustache');
     let template = await response.text();
 
-    document.getElementById('follow-card').innerHTML = Mustache.render(template, friend);
+    document.getElementById('follow-card').innerHTML = Mustache.render(template, userData);
 
     const followBtn = document.querySelectorAll('.follow-btn');
 

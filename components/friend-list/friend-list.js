@@ -1,5 +1,5 @@
 async function renderFriendList() {
-    let response = await fetch('components/friend-list/friend-list.html');
+    let response = await fetch('components/friend-list/friend-list.mustache');
     let template = await response.text();
    
     let images = JSON.parse(localStorage.getItem('friendsImg'));
