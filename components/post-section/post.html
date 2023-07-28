@@ -1,0 +1,71 @@
+<section class="post-container">
+    <div class="post-btn">
+        <button id="start-post-btn">Start Post</button>
+    </div>
+    <form class="post-form" id="post-form">
+        <div class="mb-3">
+            <label for="img-url" class="form-label">Image URL</label>
+            <input type="url" class="form-control" name="img-url" id="img-url" placeholder="url">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="title">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="post-card-container">
+        <!-- <div class="avatar-and-line">
+            <div>
+                <img src="../../assets/avatar-1.png" alt="avatar-1" class="avatar">
+            </div>
+            <div class="avatar-line"></div>
+        </div> -->
+
+        <div class="post-card">
+            <div class="post-heading">
+                <div>
+                    <p class="name">Josephin Doe posted on your timeline</p>
+                    <p class="time">50 minutes ago</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-ellipsis-vertical menu-icon"></i>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1690375636915-29d19feae92f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60"
+                    alt="image">
+            </div>
+            <div class="card-footer">
+                <div class="title-description">
+                    <p class="title">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus non at
+                        minima dignissimos
+                        earum soluta illo commodi totam eius quidem. Lorem ipsum dolor </p>
+                </div>
+                <hr>
+                <div class="footer-buttons">
+                    <div class="like">
+                        <div><i class="fa-solid fa-heart"></i></div>
+                        <p>Like (20)</p>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="comments">
+                        <div><i class="fa-solid fa-message"></i></div>
+                        <p>Comments (25)</p>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="share">
+                        <div><i class="fa-solid fa-share-nodes"></i></div>
+                        <p>Share (10)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

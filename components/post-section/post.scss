@@ -1,0 +1,138 @@
+.post-container {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    width: 75%;
+
+    .post-btn {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 15px;
+
+        button {
+            background-color: #259cf1;
+            border: none;
+            border-radius: 10px;
+            color: #ffffff;
+            padding: 10px 20px;
+        }
+    }
+
+    .post-form {
+        background-color: #fcfcfc;
+        border-radius: 20px;
+        // color: #259cf1;
+        padding: 20px 40px;
+
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+    }
+
+    .post-card-container {
+        display: flex;
+
+        // div{
+        //     .avatar-and-line{
+        //         display: flex;
+        //         align-items: center;
+        //         height: 50px;
+        //     }
+        //     .avatar{
+        //         width: 45px;
+        //         margin-top: 20px;    
+        //     }
+        //     .avatar-line{
+        //         width: 35px;
+        //         border-top: 2px solid rgb(145, 143, 143);
+        //     }
+        // }
+
+        .post-card {
+            background-color: #ffffff;
+            width: 90%;
+
+            .post-heading {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 20px;
+
+                div {
+                    .name {
+                        font-size: 18px;
+                    }
+
+                    .time {
+                        color: #abaaaa;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+
+                .menu-icon {
+                    font-size: 25px;
+                    color: #abaaaa;
+                }
+            }
+
+            .card-image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .card-footer{
+                .title-description{
+                    padding: 20px 20px;
+
+                    .title{
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    .description{
+                        color: gray;
+                        margin: 0;
+                    }
+                }
+
+                hr{
+                    margin: 0;
+                }
+
+                .footer-buttons{
+                    display: flex;
+                    padding: 20px 20px;
+
+                    .vl{
+                        height: 30px;
+                        border-right: 1px solid gray;
+                        margin: 0 15px;
+                    }
+
+                    .like , .comments , .share{
+                        align-items: center;
+                        display: flex;
+                        font-size: 18px;
+                        color: gray;
+                    }
+                    .like, .comments, .share{
+                        div{
+                            i{
+                                margin-right: 12px;
+                            }
+                        }
+
+                        p{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

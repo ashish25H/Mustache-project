@@ -1,0 +1,92 @@
+.post-container {
+  position: absolute;
+  top: 600px;
+  left: 400px;
+  width: 75%;
+}
+.post-container .post-btn {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 15px;
+}
+.post-container .post-btn button {
+  background-color: #259cf1;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.post-container .post-form {
+  background-color: #fcfcfc;
+  border-radius: 20px;
+  padding: 20px 40px;
+}
+.post-container .post-form .error {
+  color: red;
+  margin-top: 5px;
+}
+.post-container .post-card-container {
+  display: flex;
+}
+.post-container .post-card-container .post-card {
+  background-color: #ffffff;
+  width: 90%;
+}
+.post-container .post-card-container .post-card .post-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.post-container .post-card-container .post-card .post-heading div .name {
+  font-size: 18px;
+}
+.post-container .post-card-container .post-card .post-heading div .time {
+  color: #abaaaa;
+}
+.post-container .post-card-container .post-card .post-heading div p {
+  margin: 0px;
+}
+.post-container .post-card-container .post-card .post-heading .menu-icon {
+  font-size: 25px;
+  color: #abaaaa;
+}
+.post-container .post-card-container .post-card .card-image img {
+  width: 100%;
+}
+.post-container .post-card-container .post-card .card-footer .title-description {
+  padding: 20px 20px;
+}
+.post-container .post-card-container .post-card .card-footer .title-description .title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.post-container .post-card-container .post-card .card-footer .title-description .description {
+  color: gray;
+  margin: 0;
+}
+.post-container .post-card-container .post-card .card-footer hr {
+  margin: 0;
+}
+.post-container .post-card-container .post-card .card-footer .footer-buttons {
+  display: flex;
+  padding: 20px 20px;
+}
+.post-container .post-card-container .post-card .card-footer .footer-buttons .vl {
+  height: 30px;
+  border-right: 1px solid gray;
+  margin: 0 15px;
+}
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments, .post-container .post-card-container .post-card .card-footer .footer-buttons .share {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  color: gray;
+}
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like div i, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments div i, .post-container .post-card-container .post-card .card-footer .footer-buttons .share div i {
+  margin-right: 12px;
+}
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like p, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments p, .post-container .post-card-container .post-card .card-footer .footer-buttons .share p {
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=post.css.map */
