@@ -27,10 +27,31 @@
 }
 .post-container .post-card-container {
   display: flex;
+  justify-content: flex-end;
+}
+.post-container .post-card-container .post-line {
+  border-left: 2px solid gray;
+  display: flex;
+  justify-content: flex-end;
+}
+.post-container .post-card-container .avatar-and-line {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.post-container .post-card-container .avatar-and-line .avatar {
+  width: 45px;
+  margin-top: 0px;
+}
+.post-container .post-card-container .avatar-and-line .avatar-line {
+  margin: 0 3px;
+  width: 20px;
+  border-top: 3px solid #c8c6c6;
 }
 .post-container .post-card-container .post-card {
   background-color: #ffffff;
   width: 90%;
+  margin-bottom: 33px;
 }
 .post-container .post-card-container .post-card .post-heading {
   display: flex;
@@ -52,6 +73,7 @@
 }
 .post-container .post-card-container .post-card .card-image img {
   width: 100%;
+  height: 500px;
 }
 .post-container .post-card-container .post-card .card-footer .title-description {
   padding: 20px 20px;
@@ -76,16 +98,22 @@
   border-right: 1px solid gray;
   margin: 0 15px;
 }
-.post-container .post-card-container .post-card .card-footer .footer-buttons .like, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments, .post-container .post-card-container .post-card .card-footer .footer-buttons .share {
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .comments,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .share {
   align-items: center;
   display: flex;
   font-size: 18px;
   color: gray;
 }
-.post-container .post-card-container .post-card .card-footer .footer-buttons .like div i, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments div i, .post-container .post-card-container .post-card .card-footer .footer-buttons .share div i {
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like div i,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .comments div i,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .share div i {
   margin-right: 12px;
 }
-.post-container .post-card-container .post-card .card-footer .footer-buttons .like p, .post-container .post-card-container .post-card .card-footer .footer-buttons .comments p, .post-container .post-card-container .post-card .card-footer .footer-buttons .share p {
+.post-container .post-card-container .post-card .card-footer .footer-buttons .like p,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .comments p,
+.post-container .post-card-container .post-card .card-footer .footer-buttons .share p {
   margin-bottom: 0px;
 }
 

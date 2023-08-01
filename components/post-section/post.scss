@@ -30,28 +30,39 @@
         }
     }
 
+   
+
     .post-card-container {
         display: flex;
+        justify-content: flex-end;
 
-        // div{
-        //     .avatar-and-line{
-        //         display: flex;
-        //         align-items: center;
-        //         height: 50px;
-        //     }
-        //     .avatar{
-        //         width: 45px;
-        //         margin-top: 20px;    
-        //     }
-        //     .avatar-line{
-        //         width: 35px;
-        //         border-top: 2px solid rgb(145, 143, 143);
-        //     }
-        // }
+        .post-line{
+            border-left: 2px solid gray;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .avatar-and-line {
+            display: flex;
+            align-items: center;
+            height: 50px;
+
+            .avatar {
+                width: 45px;
+                margin-top: 0px;
+            }
+
+            .avatar-line {
+                margin: 0 3px;
+                width: 20px;
+                border-top: 3px solid #c8c6c6;
+            }
+        }
 
         .post-card {
             background-color: #ffffff;
             width: 90%;
+            margin-bottom: 33px;
 
             .post-heading {
                 display: flex;
@@ -81,56 +92,62 @@
             .card-image {
                 img {
                     width: 100%;
+                    height: 500px;
                 }
             }
 
-            .card-footer{
-                .title-description{
+            .card-footer {
+                .title-description {
                     padding: 20px 20px;
 
-                    .title{
+                    .title {
                         font-size: 20px;
                         margin-bottom: 5px;
                     }
 
-                    .description{
+                    .description {
                         color: gray;
                         margin: 0;
                     }
                 }
 
-                hr{
+                hr {
                     margin: 0;
                 }
 
-                .footer-buttons{
+                .footer-buttons {
                     display: flex;
                     padding: 20px 20px;
 
-                    .vl{
+                    .vl {
                         height: 30px;
                         border-right: 1px solid gray;
                         margin: 0 15px;
                     }
 
-                    .like , .comments , .share{
+                    .like,
+                    .comments,
+                    .share {
                         align-items: center;
                         display: flex;
                         font-size: 18px;
                         color: gray;
                     }
-                    .like, .comments, .share{
-                        div{
-                            i{
+
+                    .like,
+                    .comments,
+                    .share {
+                        div {
+                            i {
                                 margin-right: 12px;
                             }
                         }
 
-                        p{
+                        p {
                             margin-bottom: 0px;
                         }
                     }
-                    
+
                 }
             }
         }
