@@ -25,19 +25,27 @@
   color: red;
   margin-top: 5px;
 }
+.post-container .post-list li {
+  list-style: none;
+}
 .post-container .post-card-container {
   display: flex;
   justify-content: flex-end;
 }
 .post-container .post-card-container .post-line {
-  border-left: 2px solid gray;
+  background-color: #dad8d8;
+  width: 5px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  left: 24px;
+  z-index: -1;
 }
 .post-container .post-card-container .avatar-and-line {
-  display: flex;
   align-items: center;
+  display: flex;
   height: 50px;
+  padding-top: 63px;
 }
 .post-container .post-card-container .avatar-and-line .avatar {
   width: 45px;
@@ -50,7 +58,8 @@
 }
 .post-container .post-card-container .post-card {
   background-color: #ffffff;
-  width: 90%;
+  width: 95%;
+  margin-top: 40px;
   margin-bottom: 33px;
 }
 .post-container .post-card-container .post-card .post-heading {

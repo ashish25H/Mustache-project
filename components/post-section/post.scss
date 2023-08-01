@@ -30,6 +30,11 @@
         }
     }
 
+    .post-list{
+        li{
+            list-style: none;
+        }
+    }
    
 
     .post-card-container {
@@ -37,15 +42,21 @@
         justify-content: flex-end;
 
         .post-line{
-            border-left: 2px solid gray;
+            // border-left: 2px solid gray;
+            background-color: #dad8d8;
+            width: 5px;
             display: flex;
             justify-content: flex-end;
+            position: relative;
+            left: 24px;
+            z-index: -1;
         }
 
         .avatar-and-line {
-            display: flex;
             align-items: center;
+            display: flex;
             height: 50px;
+            padding-top: 63px;
 
             .avatar {
                 width: 45px;
@@ -61,7 +72,8 @@
 
         .post-card {
             background-color: #ffffff;
-            width: 90%;
+            width: 95%;
+            margin-top: 40px;
             margin-bottom: 33px;
 
             .post-heading {
